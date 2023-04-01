@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+
+<body>
+    <h1>calculadora</h1>
+    <div id="resulid"></div>
+    <p id="resultado"></p>
+    <script>
+        function soma(num1, num2) {
+            resultado = num1 + num2;
+            return resltado;
+        }
+        function mult(num1, num2) {
+            resultado = num1 * num2;
+            return resltado;
+        } function sub(num1, num2) {
+            resultado = num1 - num2;
+            return resltado;
+        } function div(num1, num2) {
+            resultado = num1 / num2;
+            return resltado;
+        }
+        let resul;
+        let operador
+        num1 = Number(prompt("digite o primeiro valor"))
+        num2 = Number(prompt("digite o  valor"))
+        operador = Number(prompt("qual operador deseja.\n 0 - soma \n 1 - sub \n 2 - mult \n 3 - div"))
+        switch (key) {
+            case 0:
+                resul = soma(num1, num2)
+                break;
+
+            case 1:
+                resul += mult(num1, num2)
+                break;
+            case 2
+                :resul += sub(num1, num2)
+
+                break;
+            case 3
+                :resul += div(num1, num2)
+
+
+
+            default:
+                break;
+        }
+        document.getElementById("resulid").innerHTML += "numero 1" + num1 + "numero 2 " + num2 + "resultado " + resul + "<br/>";
+    </script>
+</body>
+
+</html>
